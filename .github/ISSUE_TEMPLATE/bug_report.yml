@@ -1,0 +1,37 @@
+name: Beta bug report
+description: Report a reproducible Schedule Control problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Please remove tokens, external URLs containing credentials, and other private information.
+  - type: input
+    id: ha_version
+    attributes:
+      label: Home Assistant version and installation type
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Schedule Control version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or screenshots
+

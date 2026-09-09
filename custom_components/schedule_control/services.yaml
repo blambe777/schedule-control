@@ -1,0 +1,61 @@
+set_mode:
+  name: Set operating mode
+  description: Activate Normal or a configured operating mode for a Schedule Control card.
+  fields:
+    card_id:
+      name: Card ID
+      required: true
+      selector:
+        text:
+start_boost:
+  name: Start schedule boost
+  description: Temporarily override a climate schedule using a backend-owned timer.
+  fields:
+    card_id:
+      name: Card ID
+      required: true
+      selector:
+        text:
+    group_id:
+      name: Schedule/group ID
+      required: true
+      selector:
+        text:
+    duration:
+      name: Duration
+      required: true
+      selector:
+        number:
+          min: 1
+          max: 1440
+          unit_of_measurement: min
+    temperature:
+      name: Temperature
+      selector:
+        number:
+          min: 5
+          max: 35
+          step: 0.5
+          unit_of_measurement: °C
+    preset:
+      name: Preset
+      selector:
+        text:
+cancel_boost:
+  name: Cancel schedule boost
+  fields:
+    card_id:
+      name: Card ID
+      required: true
+      selector:
+        text:
+    group_id:
+      name: Schedule/group ID
+      required: true
+      selector:
+        text:
+    mode:
+      name: Mode ID or name
+      required: true
+      selector:
+        text:

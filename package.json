@@ -1,0 +1,10 @@
+{
+  "name": "heating-schedule-card",
+  "version": "0.1.0-beta.1",
+  "type": "module",
+  "description": "Touch-friendly Home Assistant schedule editor and controller for climate, switch and light entities",
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build.mjs"
+  }
+}
